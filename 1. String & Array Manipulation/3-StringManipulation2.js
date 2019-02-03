@@ -17,9 +17,13 @@ function nameFormatter(oldName) {
     Final result should be "Albert Einstein"                
     */
   const splittedArray = oldName.split(' ');
+  console.log(splittedArray);
   const result = splittedArray.map((item) => {    
-    return item.slice(0, 1).toUpperCase() + item.slice(1).toLowerCase();
+    const mapped = item.slice(0, 1).toUpperCase() + item.slice(1).toLowerCase();
+    console.log(mapped);
+    return mapped;
   });
+  console.log(result);
   return result.join(' ');
 }
 console.log(nameFormatter(name));
